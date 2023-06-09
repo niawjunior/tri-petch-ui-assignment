@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+  /* apply classes */
+  .hide-only-mobile {
+    @apply desktop:flex tablet:flex mobile:hidden !important;
+  }
+  .text-header {
+    @apply ml-[10px] text-[#C2C2C2] tracking-[1.5px];
+  }
+
+  .text-header-detail {
+    @apply mt-[21px] tracking-[0.93px];
+  }
+
+  .title {
+    @apply text-[#E7E7E7];
+  }
+
+  .purple-underline {
+    @apply h-[5px] w-[19px] bg-[#603EBE];
+  }
+  .white-underline {
+    @apply h-[5px] w-[19px] bg-[#FFFFFF];
+  }
+
+  /* sections */
+  .section-1 {
+    @apply flex justify-end pb-[30px] bg-white;
+  }
+
+  .section-2 {
+    @apply flex justify-end pb-[30px] bg-[#F5F4F9];
+  }
+  .section-3 {
+    @apply flex justify-end pb-[30px] bg-[#5E3DB3];
+  }
+  .section-4 {
+    @apply flex justify-start pb-[30px] bg-white;
+  }
+  .section-5 {
+    @apply flex justify-start pb-[30px] bg-[#F5F4F9];
+  }
+  .section-6 {
+    @apply flex justify-start pb-[30px] bg-[#090C35];
+  }
+
+  /* images */
+  .footballer-desktop-position {
+    z-index: 1;
+    position: absolute;
+    left: 100px;
+    top: 35px;
+  }
+
+  .footballer-tablet-position {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 50px;
+  }
+
+  .footballer-mobile-position {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    left: 0px;
+    top: 100px;
+  }
+
+  .footballer-desktop-position img {
+    margin: unset;
+  }
+
+  .footballer-tablet-position img {
+    margin: unset;
+  }
+
+  .footballer-mobile-position img {
+    margin: auto;
+  }
+
+  .player-desktop-position {
+    position: absolute;
+    right: 0%;
+    left: 55%;
+    top: 2%;
+    bottom: 18.34%;
+    overflow: unset;
+  }
+  .player-labtop-position {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    bottom: 18.34%;
+  }
+
+  .player-mobile-position {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 10%;
+    bottom: 10%;
+  }
+}
+
+.player-mobile-position img {
+  margin: auto;
+}
+
+/* carousel slider */
+.carousel-slider {
+  height: 250px;
+}
+
+.carousel .control-dots .dot {
+  background-color: #5c3caf;
+  box-shadow: unset;
+}
